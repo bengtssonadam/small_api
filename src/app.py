@@ -30,6 +30,15 @@ def create_app():
 
         return Response(json.dumps(data), 200, content_type='application/json')
 
+    @app.get('/api/v1.0/third')
+    def third_get():
+        data = {
+            'name': 'Anna',
+            'age': 58
+        }
+
+        return Response(json.dumps(data), 200, content_type='application/json')
+
     return app
 
 
