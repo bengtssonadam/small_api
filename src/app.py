@@ -16,7 +16,7 @@ def create_app():
     def first_get():
         data = {
             'name': 'Jane',
-            'age': 34
+            'age': 35
         }
 
         return Response(json.dumps(data), 200, content_type='application/json')
